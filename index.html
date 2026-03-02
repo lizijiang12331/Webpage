@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<br/>
+  <title>李酱妹妹の个人博客</title>
+  <center><h1>李酱妹妹の个人博客</h1></center>
+  <style>
+
+  #canvas {
+                position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: none;
+        }
+        .content{
+      position: absolute;
+    z-index: 11;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.splash{
+  position: relative;
+  }
+  img#qq {
+    width: 128px;
+    background-size: cover;
+    border-radius: 200px;
+    box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+    border: 3px solid #00a0ff;
+    opacity: 1;
+    margin: 0 auto;
+	margin-bottom: 20px;
+	transition: all 1.0s;  
+}
+#qq:hover {
+    box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 19px #fff;
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg); 	/* IE 9 */
+    -moz-transform:rotate(360deg); 	/* Firefox */
+    -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+    -o-transform:rotate(360deg); 	/* Opera */
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+</style>
+
+
+</head>
+
+         
+           
+            
+                
+              
+  
+  <div class="jumbotron">
+    <div class="container">
+      <div class="splash">
+        <div class="content">
+          <center><img src="./LOGO.png" tppabs="" alt="PatternFly logo" id="qq" class="wow fadeInDown animated"
+  <meta name="description" content="记录日常、学习与生活碎片" />
+  
+  <!-- 基础样式 -->
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --text: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --accent: #7c3aed;
+      --accent-hover: #9f7aea;
+      --card: #1a1a1a;
+      --border: #333;
+    }
+    
+    [data-theme="light"] {
+      --bg: #f8f9fa;
+      --text: #1a1a1a;
+      --text-secondary: #666;
+      --accent: #6d28d9;
+      --accent-hover: #8b5cf6;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.8rem;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      z-index: 100;
+    }
+
+    .theme-toggle:hover {
+      transform: scale(1.08);
+      border-color: var(--accent);
+    }
+
+    nav {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .posts {
+      display: grid;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    .post-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem 2rem;
+      transition: all 0.25s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    }
+
+    .post-date {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+    }
+
+    .post-title {
+      font-size: 1.48rem;
+      margin: 0.4rem 0 0.9rem;
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+    }
+
+    .post-title:hover {
+      color: var(--accent);
+    }
+
+    .post-excerpt {
+      color: var(--text-secondary);
+      font-size: 1.03rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tag {
+      background: rgba(124, 58, 237, 0.12);
+      color: var(--accent);
+      padding: 0.28rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.84rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 4rem 0 2rem;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2.6rem; }
+      header { padding: 60px 0 40px; }
+      .theme-toggle { top: 16px; right: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="theme-toggle" title="切换深色/浅色模式">☀️</button>
+
+  <div class="container">
+    <header>
+      <div class="subtitle">写代码・做视频・打游戏・偶尔emo</div>
+      
+      <nav>
+        <a href="#posts">一些问题</a>
+        <a href="https://space.bilibili.com/645965778" target="_blank">作者B站主页</a>
+      </nav>
+    </header>
+
+    <main id="posts">
+      <div class="posts">
+
+        <article class="post-card">
+          <div class="post-date">2026年2月18日</div>
+          <a href="#" class="post-title">为什么我在哔哩哔哩做视频快3年了还火不起来？</a>
+          <p class="post-excerpt">因为学业压力和生活中的烦恼所迫，因此我无法一心一意的做视频</p>
+          <div class="tags">
+            <span class="tag">自媒体</span>
+            <span class="tag">视频剪辑制作</span>
+            <span class="tag">个人爱好</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">2026年1月12日</div>
+          <a href="#" class="post-title">在B站几年后，我如今网络环境的真实感受</a>
+          <p class="post-excerpt">互联网鱼龙混杂，什么样的生物都有。见证物种多样化</p>
+          <div class="tags">
+            <span class="tag">互联网</span>
+            <span class="tag">bilibili</span>
+            <span class="tag">个人感想</span>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <div class="post-date">2025年12月3日</div>
+          <a href="#" class="post-title">接下来的路怎么走？向哪走？</a>
+          <p class="post-excerpt">先完成我的学业，闲暇之余来剪一下视频发到B站上，大家可以去我B站主页看看</p>
+          <div class="tags">
+            <span class="tag">规划</span>
+            <span class="tag">个人想法</span>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 温柔の李酱妹妹 · Powered by HTML + 一颗不安分的心</p>
+    </footer>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const html = document.documentElement;
+
+    // 读取用户之前的偏好
+    const savedTheme = localStorage.getItem('theme') || 
+                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    html.setAttribute('data-theme', savedTheme);
+    toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    toggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      
+      html.setAttribute('data-theme', next);
+      toggle.textContent = next === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>
